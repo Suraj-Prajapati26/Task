@@ -1,0 +1,185 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search-icon {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  .image img {
+    width: 50px;
+    height: 30%;
+  }
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-item {
+    margin-bottom: 1em;
+  }
+  
+  .question {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .question .icon {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+  }
+  
+  .answer {
+    display: none;
+    margin-top: 0.5em;
+    padding-left: 2em;
+    color: lightgray;
+  }
+  
+  .answer.show {
+    display: block;
+  }
+  #general-section {
+    border: 1px solid white;
+    padding: 20px;
+  }
+  .word {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.word.active {
+    border-bottom: 2px solid skyblue;
+}
+  
+  .section {
+    display: none;
+    color: white;
+    margin-bottom: 7%;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  /* Footer section */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 50px;
+}
+
+/* Box container */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Box */
+.box {
+  flex: 1;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* Box headings */
+.box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Box links */
+.box a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.box a:hover {
+  color: #fff;
+}
+
+/* Logo */
+.box img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+    .search-icon {
+      display: none;
+    }
+    .navbar-menu-icon {
+      display: block;
+    }
+    .navbar {
+      flex-direction: column;
+      height: auto;
+    }
+    .navbar-logo {
+      margin: 10px 0;
+    }
+    .navbar-links li {
+      margin: 10px 0;
+    }
+    .navbar-menu-icon i {
+      font-size: 1.5rem;
+    }
+  }
+  
